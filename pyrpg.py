@@ -185,16 +185,16 @@ Graviga = AttackGenerator(element=GRAVITY, type=MAGICAL, attack_category=BLUE_MA
 
 # Purple Magic
 
-Hell = AttackGenerator(element=FIRE, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=116, mp_cost=96, hit_rate=100)
-Freeze = AttackGenerator(element=ICE, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=116, mp_cost=96, hit_rate=100)
-Electrocute = AttackGenerator(element=THUNDER, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=116, mp_cost=96, hit_rate=100)
-Tornado = AttackGenerator(element=WIND, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=116, mp_cost=96, hit_rate=100)
+Hell = AttackGenerator(element=FIRE, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=116, mp_cost=96, status_effects=(BURN,), status_chance=125, hit_rate=100)
+Freeze = AttackGenerator(element=ICE, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=116, mp_cost=96, status_effects=(PARALYSIS,), status_chance=125, hit_rate=100)
+Electrocute = AttackGenerator(element=THUNDER, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=116, mp_cost=96, status_effects=(SHOCK,), status_chance=125, hit_rate=100)
+Tornado = AttackGenerator(element=WIND, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=116, mp_cost=96, status_effects=(CONFUSE,), status_chance=125, hit_rate=100)
 
-Stone = AttackGenerator(element=EARTH, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=120, mp_cost=108, hit_rate=100)
-Tsunami = AttackGenerator(element=WATER, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=120, mp_cost=108, hit_rate=100)
-Pandemic = AttackGenerator(element=POISON, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=112, mp_cost=128, hit_rate=100)
-Holy = AttackGenerator(element=HOLY, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=112, mp_cost=128, hit_rate=100)
+Stone = AttackGenerator(element=EARTH, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=120, mp_cost=108, status_effects=(PETRIFY,), status_chance=125, hit_rate=100)
+Tsunami = AttackGenerator(element=WATER, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=120, mp_cost=108, status_effects=(LOCK), status_chance=125, hit_rate=100)
+Pandemic = AttackGenerator(element=POISON, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=112, mp_cost=128, status_effects=(VIRUS,), status_chance=125, hit_rate=100)
+Holy = AttackGenerator(element=HOLY, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel2, reflectable=True, strength=112, mp_cost=128, status_effects=(SILENCE,), status_chance=125, hit_rate=100)
 
-Curaja = AttackGenerator(element=RESTORATIVE, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel3, reflectable=True, strength=182, mp_cost=84, hit_rate=100)
+Curaja = AttackGenerator(element=RESTORATIVE, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=StrengthAttackLevel3, reflectable=True, strength=182, mp_cost=84, additional_effect=HEALALLSTATUS, hit_rate=100)
 
-Gravija = AttackGenerator(element=GRAVITY, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=CurrentHPFormula, reflectable=True, strength=30, mp_cost=62, hit_rate=75)
+Gravija = AttackGenerator(element=GRAVITY, type=MAGICAL, attack_category=PURPLE_MAGIC, attack_formula=CurrentHPFormula, reflectable=True, strength=30, mp_cost=62, status_effects=(DARKNESS,), status_chance=125, hit_rate=75)

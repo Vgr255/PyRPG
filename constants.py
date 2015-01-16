@@ -1,7 +1,9 @@
-# These random constants start with 0x0000
+FIXED_DAMAGE_MULTIPLIER = 32
 
-FIXED_DAMAGE_MULTIPLIER = 0x00000020
-RECOVERY = 0x0000FFFF
+# These random constants start with 0xFFFF
+
+RECOVERY = 0xFFFF0000
+MISS = 0xFFFF0001
 
 # Elements start with 0x0001
 
@@ -42,7 +44,7 @@ PARALYSIS = 0x00020010
 DARKNESS = 0x00020011
 BURN = 0x00020012
 SHOCK = 0x00020013
-BLIND = 0x00020014
+LOCK = 0x00020014
 
 # Status Effects modifiers start with 0x000201
 
