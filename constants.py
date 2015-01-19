@@ -128,12 +128,12 @@ FREELANCER = 0x00050015
 
 # Attack Categories start with 0x0006
 
-RANGE_ATTACKCAT = (0x00060000, 0x000600
+RANGE_ATTACKCAT = (0x00060000, 0x00060007)
 
 BLACK_MAGIC = 0x00060000 # basic elemental magic
 WHITE_MAGIC = 0x00060001 # healing magic
 RED_MAGIC = 0x00060002 # advanced elemental magic
-BLUE_MAGIC = 0x00060003 # none-elemental or non-damaging magic
+BLUE_MAGIC = 0x00060003 # non-elemental or non-damaging magic
 GREEN_MAGIC = 0x00060004 # negative effect magic
 PURPLE_MAGIC = 0x00060005 # extreme magic
 ARCANE_MAGIC = 0x00060006 # all-powerful forbidden magic
