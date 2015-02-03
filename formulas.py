@@ -6,8 +6,6 @@
 # -Vgr
 # can also ask me on IRC to be given push access if you want
 
-from constants import *
-
 # This is only a draft, and can change heavily
 
 """
@@ -30,15 +28,17 @@ this is also based off FF7's battle damage formulas, and other various FFs
 
 -Vgr"""
 
+from definitions import *
+
 class DamageTypes:
     def _recovery(target):
         target.cur_hp = target.max_hp
         target.cur_mp = target.max_mp
         target.status.clear()
-        return RECOVERY
+        return Constants.Recovery
 
     def _fixed_damage(strength):
-        return int(strength * FIXED_DAMAGE_MULTIPLIER)
+        return int(strength * Fixed.DamageMultipler.value)
 
 class AttackFormula(DamageTypes):
     class NoDamage:
