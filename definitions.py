@@ -14,3 +14,4 @@ CharacterJobs = Enum("Character Job", "WhiteMage, BlackMage, RedMage, BlueMage, 
                      "Summoner, Alchemist, Sage, Mime, Freelancer")
 AttackCategories = Enum("Attack Category", "WhiteMagic, BlackMagic, RedMagic, BlueMagic, TimeMagic, " +
                         "GreenMagic, PurpleMagic, ArcaneMagic")
+AdditionalEffects = Enum("Additional Effect", "HealAllStatus")
